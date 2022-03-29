@@ -1,0 +1,115 @@
+#Remote
+setREMT {out "REMT;";}
+
+#Display
+setDISP {out "DISP %d,%(\$1)d;";}
+getDISP {out "DISP?"; in"%d,%(\$1)d;";}
+
+#Show Display
+#setSHDP {out "SHDP %d;";}
+#getSHDP {out "SHDP?"; in "%d;";}
+
+#TimeBase
+getTIMB {out "TIMB?"; in "%d;";}
+
+####Trigger Commands
+setADVT {out "ADVT %d;";}
+getADVT {out "ADVT?"; in "%d;";}
+
+#set (query) the trigger holdoff
+setHOLD {out "HOLD %f;";}
+getHOLD {out "HOLD?"; in "%f;";}
+
+#set (query) the trigger inhibit state
+setINHB {out "INHB %d;";}
+getINHB {out "INHB?"; in "%d;";}
+
+
+#set (query) the prescale phase factor
+#setPHAS{out "PHAS %d,%(\$1)d;";}
+#getPHAS{out "PHAS?%d"; in "%(\$1)d;";}
+
+#set (query) the prescale factor
+setPRES{out "PRES %d,%(\$1)d;";}
+getPRES{out "PRES?%d"; in "%(\$1)d;";}
+
+#Step Holdoff
+setSPHD {out "SPHD %d";}
+
+#step Prescale
+setSPPH {out "SPPH %d,%(\$1)d;";}
+
+#step prescale factor
+setSPPS {out "SPPS %d,%(\$1)d;";}
+
+#step trigger level
+setSPTL{out "SPTL %d;";}
+
+#step trigger rate
+setSPTR {out "SPTR %d;";}
+
+#step size trigger holdoff
+setSSHD {out "SSHD %f;";}
+getSSHD {out "SSHD?"; in "%f;";}
+
+#Step size prescale phase factor
+getSSPH {out"SSPH?%d"; in "%(\$1)d;";}
+setSSPH {out "SSPH %d,%(\$1)d;"}
+
+#Step size prescale factor
+getSSPS {out "SSPS?%d"; in "%(\$1)d;";}
+setSSPS {out "SSPS %d,%(\$1)d;";}
+
+#Step size trigger level
+getSSTL {out"SSTL?"; in "%f;";}
+setSSTL {out "SSTL %f;";}
+
+#step size trigger rate
+setSSTR {out "SSTR %f;";}
+getSSTR {out "SSTR?"; in "%f;";}
+
+#trigger level
+setTLVL {out "TLVL %f;";}
+getTLVL {out "TLVL?"; in "%f;";}
+
+#trigger rate
+getTRAT{out "TRAT?"; in "%f;";}
+setTRAT{out "TRAT %f;";}
+
+#trigger source
+setTSRC {out "TSRC %d;";}
+getTSRC {out "TSRC?"; in "%d;";}
+
+#Burst Count
+#setBURC {out "BURC %d;";}
+#getBURC {out "BURC?"; in "%d;";}
+
+#Burst Delay
+setBURD {out "BURD %f;";}
+getBURD {out "BURD?"; in "%f;";}
+
+#Burst Mode
+setBURM {out "BURM %d;";}
+getBURM {out "BURM?"; in "%d;";}
+
+#Burst Period
+getBURP {out "BURP?"; in "%f;";}
+setBURP {out "BURP %f;";}
+
+#Burst T0 Configure
+#setBURT {out "BURT %d;";}
+#getBURT {out "BURT?"; in "%d;";}
+
+#Step Burst Count
+setSPBC {out "SPBC %d;";}
+setSPBD {out "SPBD %d;";}
+setSPBP {out "SPBP %d;";}
+
+#setSSBC {out "SSBC %d;";}
+#getSSBC {out "SSBC?"; in "%d;";}
+
+setSSBD {out "SSBD %f;";}
+getSSBD {out "SSBD?"; in "%f;";}
+
+setSSBP {out "SSBP %f;";}
+getSSBP {out "SSBP?"; in "%f;";}
