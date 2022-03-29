@@ -598,8 +598,8 @@ record(ai,"$(P)getBURP")
 #		field(DESC,"Burst T0 configuration")
 #		field(DTYP,"stream")
 #		field(INP,"@DG645.proto getBURT $(PORT)")
-#		field(ZNAM,"disabled")
-#		field(ONAM,"enabled")
+#		field(ZNAM,"enable for all")
+#		field(ONAM,"enable for first")
 #		field(SCAN,"1 second")
 #	}
 	
@@ -608,8 +608,8 @@ record(ai,"$(P)getBURP")
 #		field(DESC,"Burst T0 configuration")
 #		field(DTYP,"stream")
 #		field(OUT,"@DG645.proto setBURT $(PORT)")
-#		field(ZNAM,"disabled")
-#		field(ONAM,"enabled")
+#		field(ZNAM,"enable for all")
+#		field(ONAM,"enable for first")
 #	}
 	
 #######################################
