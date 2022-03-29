@@ -2,15 +2,15 @@
 setREMT {out "REMT;";}
 
 #Display
-setDISP {out "DISP %d,%(\$1)d;";}
-getDISP {out "DISP?"; in"%d,%(\$1)d;";}
+#setDISP {out "DISP %d,%(\$1)d;";}
+#getDISP {out "DISP?"; in"%d,%(\$1)d;";}
 
 #Show Display
 #setSHDP {out "SHDP %d;";}
 #getSHDP {out "SHDP?"; in "%d;";}
 
 #TimeBase
-getTIMB {out "TIMB?"; in "%d;";}
+#getTIMB {out "TIMB?"; in "%d;";}
 
 ####Trigger Commands
 setADVT {out "ADVT %d;";}
