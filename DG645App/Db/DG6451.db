@@ -1,0 +1,591 @@
+#set remote
+record(bo, $(P)setREMT)
+	{
+		field(DESC, "remote")
+		field(DTYP, "stream")
+		field(OUT, "@DG6451.proto setREMT $(PORT)")
+		field(ZNAM, "disable")
+		field(ONAM, "enable")
+		field(PINI, "YES")
+	}
+	
+#Display
+#record(mbbi,"$(P)getDISP")
+#	{
+#		field(DESC,"Display")
+#		field(DTYP,"stream")
+#		field(INP,"@DG6451.proto getDISP($(P)getCHAN) $(PORT)")
+#		field(ZRVL,"0")
+#		field(ONVL,"1")
+#		field(TWVL,"2")
+#		field(THVL,"3")
+#		field(FRVL,"4")
+#		field(FVVL,"5")
+#		field(SXVL,"6")
+#		field(SVVL,"7")
+#		field(EIVL,"8")
+#		field(NIVL,"9")
+#		field(TEVL,"10")
+#		field(ELVL,"11")
+#		field(TVVL,"12")
+#		field(TTVL,"13")
+#		field(FTVL,"14")
+#		field(ZRST, "Trigger rate")
+#		field(ONST, "Trigger threshold")
+#		field(TWST, "Trigger single shot")
+#		field(THST, "Trigger line")
+#		field(FRST, "Adv trigger enable")
+#		field(FVST, "Trigger holdoff")
+#		field(SXST, "Prescale configuration")
+#		field(SVST, "Burst mode")
+#		field(EIST, "Burst delay")
+#		field(NIST, "Burst count")
+#		field(TEST, "Burst period")
+#		field(ELST, "Channel delay")
+#		field(TVST, "Channel output levels")
+#		field(TTST, "Channel output polarity")
+#		field(FTST,"Burst T0 configuration")
+#		field(SCAN, "1 second")
+#	}
+	
+#record(mbbi,"$(P)getCHAN")
+#	{
+#		field(DESC,"Channel")
+#		field(ZRVL,"0")
+#		field(ONVL,"1")
+#		field(TWVL,"2")
+#		field(THVL,"3")
+#		field(FRVL,"4")
+#		field(FVVL,"5")
+#		field(SXVL,"6")
+#		field(SVVL,"7")
+#		field(EIVL,"8")
+#		field(NIVL,"9")
+#		field(ZRST, "T0")
+#		field(ONST, "T1")
+#		field(TWST, "A")
+#		field(THST, "B")
+#		field(FRST, "C")
+#		field(FVST, "D")
+#		field(SXST, "E")
+#		field(SVST, "F")
+#		field(EIST, "G")
+#		field(NIST, "H")
+#	}
+	
+#record(mbbo,"$(P)setDISP")
+#	{
+#		field(DESC,"Display")
+#		field(DTYP,"stream")
+#		field(OUT,"@DG6451.proto setDISP($(P)setCHAN) $(PORT)")
+#		field(ZRVL,"0")
+#		field(ONVL,"1")
+#		field(TWVL,"2")
+#		field(THVL,"3")
+#		field(FRVL,"4")
+#		field(FVVL,"5")
+#		field(SXVL,"6")
+#		field(SVVL,"7")
+#		field(EIVL,"8")
+#		field(NIVL,"9")
+#		field(TEVL,"10")
+#		field(ELVL,"11")
+#		field(TVVL,"12")
+#		field(TTVL,"13")
+#		field(FTVL,"14")
+#		field(ZRST, "Trigger rate")
+#		field(ONST, "Trigger threshold")
+#		field(TWST, "Trigger single shot")
+#		field(THST, "Trigger line")
+#		field(FRST, "Adv trigger enable")
+#		field(FVST, "Trigger holdoff")
+#		field(SXST, "Prescale configuration")
+#		field(SVST, "Burst mode")
+#		field(EIST, "Burst delay")
+#		field(NIST, "Burst count")
+#		field(TEST, "Burst period")
+#		field(ELST, "Channel delay")
+#		field(TVST, "Channel output levels")
+#		field(TTST, "Channel output polarity")
+#		field(FTST,"Burst T0 configuration")
+#	}
+	
+#record(mbbo,"$(P)setCHAN")
+#	{
+#		field(DESC,"Channel")
+#		field(ZRVL,"0")
+#		field(ONVL,"1")
+#		field(TWVL,"2")
+#		field(THVL,"3")
+#		field(FRVL,"4")
+#		field(FVVL,"5")
+#		field(SXVL,"6")
+#		field(SVVL,"7")
+#		field(EIVL,"8")
+#		field(NIVL,"9")
+#		field(ZRST, "T0")
+#		field(ONST, "T1")
+#		field(TWST, "A")
+#		field(THST, "B")
+#		field(FRST, "C")
+#		field(FVST, "D")
+#		field(SXST, "E")
+#		field(SVST, "F")
+#		field(EIST, "G")
+#		field(NIST, "H")
+#	}
+
+##########################################################	
+#record(bi,"$(P)getSHDP")
+#	{
+#		field(DESC,"Show display")
+#		field(DTYP,"stream")
+#		field(INP,"@DG6451.proto getSHDP $(PORT)")
+#		field(ZNAM,"off")
+#		field(ONAM,"on")
+#		field(SCAN,"1 second")
+#	}
+	
+#record(bo,"$(P)setSHDP")
+#	{
+#		field(DESC,"show display")
+#		field(DTYP,"stream")
+#		field(OUT,"@DG6451.proto setSHDP $(PORT)")
+#		field(ZNAM,"off")
+#		field(ONAM,"on")
+#	}
+
+###################################################
+#record(mbbi, "$(P)getTIMB")
+#    {
+#	    	field(DESC,"timebase")
+#		field(DTYP,"stream")
+#		field(INP,"@DG6451.proto getTIMB $(PORT)")
+#		field(ZRVL,"0")
+#		field(ONVL,"1")
+#		field(TWVL,"2")
+#		field(THVL,"3")
+#		field(ZRST,"Internal timebase")
+#		field(ONST,"OCXO timebase")
+#		field(TWST,"Rubidium timebase")
+#		field(THST,"External timebase")
+#		field(SCAN, "1 second")
+#	}
+	
+################################################	
+record(bi,"$(P)getADVT")
+	{
+		field(DESC,"advanced trigger enable")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getADVT $(PORT)")
+		field(ZNAM,"disabled")
+		field(ONAM,"enabled")
+		field(SCAN,"1 second")
+	}
+	
+record(bo,"$(P)setADVT")
+	{
+		field(DESC,"advanced trigger enable")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setADVT $(PORT)")
+		field(ZNAM,"disabled")
+		field(ONAM,"enabled")
+	}
+
+#########################################################	
+record(ai,"$(P)getHOLD")
+	{
+		field(DESC,"trigger holdoff")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getHOLD $(PORT)")
+		field(EGU,"seconds")
+		field(SCAN,"1 second")
+	}
+	
+record(ao,"$(P)setHOLD")
+	{
+		field(DESC,"trigger holdoff")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setHOLD $(PORT)")
+		field(EGU,"seconds")
+	}
+
+
+##############################################################	
+record(mbbo,$(P)setINHB)
+	{
+		field(DESC,"trigger inhibit")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setINHB $(PORT)")
+		field(ZRVL,"0")
+		field(ONVL,"1")
+		field(TWVL,"2")
+		field(THVL,"3")
+		field(FRVL,"4")
+		field(FVVL,"5")
+		field(ZRST,"off")
+		field(ONST,"Trigger")
+		field(TWST,"AB")
+		field(THST,"AB and CD")
+		field(FRST,"AB,CD,and EF")
+		field(FVST,"AB,CD,EF,and GH")
+	}
+	
+record(mbbi,$(P)getINHB)
+	{
+		field(DESC,"trigger inhibit")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getINHB $(PORT)")
+		field(ZRVL,"0")
+		field(ONVL,"1")
+		field(TWVL,"2")
+		field(THVL,"3")
+		field(FRVL,"4")
+		field(FVVL,"5")
+		field(ZRST,"off")
+		field(ONST,"Trigger")
+		field(TWST,"AB")
+		field(THST,"AB and CD")
+		field(FRST,"AB,CD,and EF")
+		field(FVST,"AB,CD,EF,and GH")
+		field(SCAN,"1 second")
+	}
+
+
+#################################################
+record(bo,"$(P)setSPHD")
+	{
+		field(DESC,"Step holdoff")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSPHD $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+
+
+######################################################	
+
+record(bo,"$(P)setSPTL")
+	{
+		field(DESC,"Step Trigger Level")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSPTL $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+	
+####################################################
+
+record(bo,"$(P)setSPTR")
+	{
+		field(DESC,"Step Trigger Level")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSPTR $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+	
+########################################################
+record(ao,"$(P)setSSHD")
+	{
+		field(DESC,"Step size trigger holdoff")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSSHD $(PORT)")
+		field(EGU,"second")
+	}
+	
+record(ai,"$(P)getSSHD")
+	{
+		field(DESC,"Step size trigger holdoff")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getSSHD $(PORT)")
+		field(EGU,"second")
+		field(SCAN,"1 second")
+	}
+
+########################################################
+record(ao,"$(P)setSSTL")
+	{
+		field(DESC,"Step size trigger Level")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSSTL $(PORT)")
+#		field(EGU,"second")
+	}
+	
+record(ai,"$(P)getSSTL")
+	{
+		field(DESC,"Step size trigger holdoff")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getSSTL $(PORT)")
+#		field(EGU,"second")
+		field(SCAN,"1 second")
+	}
+
+########################################################
+record(ao,"$(P)setSSTR")
+	{
+		field(DESC,"Step size trigger rate")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSSTR $(PORT)")
+#		field(EGU,"second")
+	}
+	
+record(ai,"$(P)getSSTR")
+	{
+		field(DESC,"Step size trigger rate")
+		field(DTYP,"stream")
+		field(INP,"@DG645.proto getSSTR $(PORT)")
+#		field(EGU,"second")
+		field(SCAN,"1 second")
+	}
+
+
+########################################################
+record(ai,"$(P)getTLVL")
+	{
+		field(DESC, "trigger Level")
+		field(DTYP, "stream")
+		field(INP, "@DG6451.proto getTLVL $(PORT)")
+		field(EGU, "volts")
+		field(SCAN, "1 second")
+	}
+	
+record(ao,"$(P)setTLVL")
+	{
+		field(DESC, "trigger Level")
+		field(DTYP, "stream")
+		field(OUT, "@DG6451.proto setTLVL $(PORT)")
+		field(EGU, "volts")
+	}
+
+##################################################	
+record(ai,"$(P)getTRAT")
+	{
+		field(DESC,"trigger rate")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getTRAT $(PORT)")
+		field(EGU,"Hz")
+		field(SCAN,"1 second")
+	}
+	
+record(ao,"$(P)setTRAT")
+	{
+		field(DESC,"trigger rate")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setTRAT $(PORT)")
+		field(EGU,"Hz")
+	}
+
+
+################################################################
+record(mbbo,$(P)setTSRC)
+	{
+		field(DESC,"trigger Source")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setTSRC $(PORT)")
+		field(ZRVL, "0")
+		field(ONVL, "1")
+		field(TWVL, "2")
+		field(THVL, "3")
+		field(FRVL, "4")
+		field(FVVL, "5")
+		field(SXVL, "6")
+		field(ZRST, "Internal")
+		field(ONST, "rising edges")
+		field(TWST, "falling edges")
+		field(THST, "Single rising edges")
+		field(FRST, "Single falling edges")
+		field(FVST, "Single shot")
+		field(SXST, "Line")
+	}
+	
+record(mbbi,$(P)getTSRC)
+	{
+		field(DESC, "Trigger Source")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getTSRC $(PORT)")
+		field(ZRVL, "0")
+		field(ONVL, "1")
+		field(TWVL, "2")
+		field(THVL, "3")
+		field(FRVL, "4")
+		field(FVVL, "5")
+		field(SXVL, "6")
+		field(ZRST, "Internal")
+		field(ONST, "rising edges")
+		field(TWST, "falling edges")
+		field(THST, "Single rising edges")
+		field(FRST, "Single falling edges")
+		field(FVST, "Single shot")
+		field(SXST, "Line")
+		field(SCAN,"1 second")
+	}
+	
+################################################################	
+record(longout,"$(P)setBURC")
+	{
+		field(DESC,"Burst Count")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setBURC $(PORT)")
+	}
+	
+record(longin,"$(P)getBURC")
+	{
+		field(DESC,"Butst Count")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getBURC $(PORT)")
+		field(SCAN,"1 second")
+	}	
+	
+###########################################################
+record(ao,"$(P)setBURD")
+	{
+		field(DESC,"Burst Delay")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setBURD $(PORT)")
+		field(EGU,"seconds")
+	}
+	
+record(ai,"$(P)getBURD")
+	{
+		field(DESC,"Burst Delay")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getBURD $(PORT)")
+		field(EGU,"seconds")
+		field(SCAN,"1 second")
+	}
+	
+################################################################	
+record(bi,"$(P)getBURM")
+	{
+		field(DESC,"Burst Mode")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getBURM $(PORT)")
+		field(ZNAM,"disabled")
+		field(ONAM,"enabled")
+		field(SCAN,"1 second")
+	}
+	
+record(bo,"$(P)setBURM")
+	{
+		field(DESC, "Burst Mode")
+		field(DTYP, "stream")
+		field(OUT, "@DG6451.proto setBURM $(PORT)")
+		field(ZNAM, "disabled")
+		field(ONAM, "enabled")
+	}
+
+############################################	
+record(ao,"$(P)setBURP")
+	{
+		field(DESC,"Burst Period")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setBURP $(PORT)")
+		field(EGU,"seconds")
+	}
+	
+record(ai,"$(P)getBURP")
+	{
+		field(DESC,"Burst Period")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getBURP $(PORT)")
+		field(EGU,"seconds")
+		field(SCAN,"1 second")
+	}
+	
+##########################################	
+record(bi,"$(P)getBURT")
+	{
+		field(DESC,"Burst T0 configuration")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getBURT $(PORT)")
+		field(ZNAM,"To enabled")
+		field(ONAM,"All enabled")
+		field(SCAN,"1 second")
+	}
+	
+record(bo,"$(P)setBURT")
+	{
+		field(DESC,"Burst T0 configuration")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setBURT $(PORT)")
+		field(ZNAM,"TO enabled")
+		field(ONAM,"All enabled")
+	}
+	
+#######################################
+record(bo,"$(P)setSPBC")
+	{
+		field(DESC,"Step Burst Count")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSPBC $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+	
+record(bo,"$(P)setSPBD")
+	{
+		field(DESC,"Step Burst Delay")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSPBD $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+	
+record(bo,"$(P)setSPBP")
+	{
+		field(DESC,"Step Burst Period")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSPBP $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+	
+record(longin,"$(P)getSSBC")
+	{
+		field(DESC,"Step size Burst Count")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getSSBC $(PORT)")
+		field(SCAN,"1 second")
+	}
+	
+record(longout,"$(P)setSSBC")
+	{
+		field(DESC,"Step size Burst Count")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSSBC $(PORT)")
+	}
+	
+record(ao,"$(P)setSSBD")
+	{
+		field(DESC,"Step size burst delay")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSSBD $(PORT)")
+		field(EGU,"seconds")
+	}
+	
+record(ai,"$(P)getSSBD")
+	{
+		field(DESC,"Step size burst delay")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getSSBD $(PORT)")
+		field(EGU,"seconds")
+		field(SCAN,"1 second")
+	}
+
+record(ao,"$(P)setSSBP")
+	{
+		field(DESC,"Step size burst Period")
+		field(DTYP,"stream")
+		field(OUT,"@DG6451.proto setSSBP $(PORT)")
+		field(EGU,"seconds")
+	}
+	
+record(ai,"$(P)getSSBP")
+	{
+		field(DESC,"Step size burst Period")
+		field(DTYP,"stream")
+		field(INP,"@DG6451.proto getSSBP $(PORT)")
+		field(EGU,"seconds")
+		field(SCAN,"1 second")
+	}

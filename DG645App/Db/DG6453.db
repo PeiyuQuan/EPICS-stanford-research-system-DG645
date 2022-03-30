@@ -1,0 +1,46 @@
+
+record(longout,$(P)$(L):setPRES)
+	{
+		field(DESC,"set prescale factor")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setPRES($(N)) $(PORT)")
+	}
+
+
+record(longin,$(P)$(L):getPRES)
+	{
+		field(DESC,"set prescale factor")
+		field(DTYP,"stream")
+		field(INP,"@DG6453.proto getPRES($(N)) $(PORT)")
+		field(SCAN, "1 second")
+	}
+
+
+###############################################
+record(bo,$(P)$(L):setSPPS)
+	{
+		field(DESC,"Step prescale facotr dir")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setSPPS($(N)) $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+
+######################################################	
+record(longout,$(P)$(L):setSSPS)
+	{
+		field(DESC,"step prescale factor")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setSSPS($(N)) $(PORT)")
+	}
+
+
+record(longin,$(P)$(L):getSSPS)
+	{
+		field(DESC,"step prescale factor")
+		field(DTYP,"stream")
+		field(INP,"@DG6453.proto getSSPS($(N)) $(PORT)")
+		field(SCAN, "1 second")
+	}
+
+

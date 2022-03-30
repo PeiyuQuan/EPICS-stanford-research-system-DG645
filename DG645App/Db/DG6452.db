@@ -1,0 +1,42 @@
+
+#######################################################
+record(longout,$(P)$(M):setPHAS)
+	{
+		field(DESC, "set phase prescale")
+		field(DTYP, "stream")
+		field(OUT, "@DG6452.proto setPHAS($(N)) $(PORT)")
+	}
+
+
+record(longin,$(P)$(M):getPHAS)
+	{
+		field(DESC, "set phase prescale")
+		field(DTYP, "stream")
+		field(INP, "@DG6452.proto getPHAS($(N)) $(PORT)")
+	}
+#####################################################
+record(bo,$(P)$(M):setSPPH)
+	{
+		field(DESC, "step prescale phase dir")
+		field(DTYP, "stream")
+		field(OUT, "@DG6452.proto setSPPH($(N)) $(PORT)")
+		field(ZNAM, "down")
+		field(ONAM, "up")
+	}	
+	
+######################################################################	
+record(longout,"$(P)$(M):setSSPH")
+	{
+		field(DESC, "Step Prescale phase")
+		field(DTYP, "stream")
+		field(OUT, "@DG6452.proto setSSPH($(N)) $(PORT)")
+	}
+	
+record(longin,"$(P)$(M):getSSPH")
+	{
+		field(DESC, "Step Prescale phase")
+		field(DTYP, "stream")
+		field(INP, "@DG6452.proto getSSPH($(N)) $(PORT)")
+		field(SCAN, "1 second")
+	}
+

@@ -1,0 +1,10 @@
+
+#set (query) the prescale phase factor
+setPHAS{out "PHAS \$1,%d;";}
+getPHAS{out "PHAS?\$1"; in "%d;";}
+
+setSPPH {out "SPPH \$1,%d;"}
+
+setSSPH {out "SSPH \$1,%d;";}
+getSSPH {out "SSPH?\$1"; in "%d;";}
+

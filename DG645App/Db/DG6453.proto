@@ -1,0 +1,14 @@
+
+#set (query) the prescale factor
+setPRES{out "PRES \$1,%d;";}
+getPRES{out "PRES?\$1"; in "%d;";}
+
+
+#step prescale factor
+setSPPS {out "SPPS \$1,%d;";}
+
+
+#Step size prescale factor
+getSSPS {out "SSPS?\$1"; in "%d;";}
+setSSPS {out "SSPS \$1,%d;";}
+
