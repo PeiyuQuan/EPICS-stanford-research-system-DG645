@@ -29,7 +29,16 @@ asynSetTraceIOMask("serial1",0,ESCAPE)
 asynSetTraceMask("serial1",0,DRIVER|ERROR|FLOW)
 
 
-dbLoadRecords("${TOP}/DG645App/Db/DG645.db","P=$(PREFIX),PORT=serial1")
+dbLoadRecords("${TOP}/DG645App/Db/DG6451.db","P=$(PREFIX),PORT=serial1")
+dbLoadRecords("${TOP}/DG645App/Db/DG6452.db","P=$(PREFIX),PORT=serial1,M=m1,N=1")
+dbLoadRecords("${TOP}/DG645App/Db/DG6452.db","P=$(PREFIX),PORT=serial1,M=m2,N=2")
+dbLoadRecords("${TOP}/DG645App/Db/DG6452.db","P=$(PREFIX),PORT=serial1,M=m3,N=3")
+dbLoadRecords("${TOP}/DG645App/Db/DG6452.db","P=$(PREFIX),PORT=serial1,M=m4,N=4")
+dbLoadRecords("${TOP}/DG645App/Db/DG6453.db","P=$(PREFIX),PORT=serial1,L=l0,N=0")
+dbLoadRecords("${TOP}/DG645App/Db/DG6453.db","P=$(PREFIX),PORT=serial1,L=l1,N=1")
+dbLoadRecords("${TOP}/DG645App/Db/DG6453.db","P=$(PREFIX),PORT=serial1,L=l2,N=2")
+dbLoadRecords("${TOP}/DG645App/Db/DG6453.db","P=$(PREFIX),PORT=serial1,L=l3,N=3")
+dbLoadRecords("${TOP}/DG645App/Db/DG6453.db","P=$(PREFIX),PORT=serial1,L=l4,N=4")
 dbLoadRecords ("$(ASYN)/db/asynRecord.db", "P=$(PREFIX), R=asyn1, PORT=serial1, ADDR=0, IMAX=80, OMAX=80")
 dbLoadRecords ("$(AUTOSAVE)/db/save_restoreStatus.db", "P=SLAC:DG645:")
 iocInit
