@@ -334,7 +334,7 @@ record(ai,"$(P)getSSTR")
 	{
 		field(DESC,"Step size trigger rate")
 		field(DTYP,"stream")
-		field(INP,"@DG645.proto getSSTR $(PORT)")
+		field(INP,"@DG6451.proto getSSTR $(PORT)")
 #		field(EGU,"second")
 		field(SCAN,"1 second")
 	}
