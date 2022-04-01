@@ -25,8 +25,8 @@ asynSetOption("serial1",0,"stop","1")
 asynSetOption("serial1",0,"parity","none")
 #asynSetOption("serial1",0,"clocal","N")
 asynSetOption("serial1",0,"crtscts","Y")
-asynSetTraceIOMask("serial1",0,ESCAPE)
-asynSetTraceMask("serial1",0,DRIVER|ERROR|FLOW)
+#asynSetTraceIOMask("serial1",0,ESCAPE)
+#asynSetTraceMask("serial1",0,DRIVER|ERROR|FLOW)
 
 
 dbLoadRecords("${TOP}/DG645App/Db/DG6451.db","P=$(PREFIX),PORT=serial1")
