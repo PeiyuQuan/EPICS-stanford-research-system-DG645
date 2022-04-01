@@ -1,0 +1,166 @@
+
+#Delay
+record (mbbo,"$(P)$(K):setchannel")
+	{
+		field(DESC,"Delay")
+		field(DTYP,"stream")
+		field(OUT,"@DG6454.proto setDlay($(N),$(P)$(K):setdelaytime) $(PORT)")
+		field(ZRVL,"0")
+		field(ONVL,"1")
+		field(TWVL,"2")
+		field(THVL,"3")
+		field(FRVL,"4")
+		field(FVVL,"5")
+		field(SXVL,"6")
+		field(SVVL,"7")
+		field(EIVL,"8")
+		field(NIVL,"9")
+		field(ZRST, "T0")
+		field(ONST, "T1")
+		field(TWST, "A")
+		field(THST, "B")
+		field(FRST, "C")
+		field(FVST, "D")
+		field(SXST, "E")
+		field(SVST, "F")
+		field(EIST, "G")
+		field(NIST, "H")	
+	}
+	
+record(ao,"$(P)$(K):setdelaytime")
+	{
+	field(DESC,"Delay time")
+	}
+
+
+
+record (mbbi,"$(P)$(K):getchannel")
+	{
+		field(DESC,"Delay")
+		field(DTYP,"stream")
+		field(INP,"@DG6454.proto getDlay($(N),$(P)$(K):getdelaytime) $(PORT)")
+		field(ZRVL,"0")
+		field(ONVL,"1")
+		field(TWVL,"2")
+		field(THVL,"3")
+		field(FRVL,"4")
+		field(FVVL,"5")
+		field(SXVL,"6")
+		field(SVVL,"7")
+		field(EIVL,"8")
+		field(NIVL,"9")
+		field(ZRST, "T0")
+		field(ONST, "T1")
+		field(TWST, "A")
+		field(THST, "B")
+		field(FRST, "C")
+		field(FVST, "D")
+		field(SXST, "E")
+		field(SVST, "F")
+		field(EIST, "G")
+		field(NIST, "H")
+		field(SCAN, "1 second")	
+	}
+	
+record(ai,"$(P)$(K):getdelaytime")
+	{
+	field(DESC,"Delay time")
+	}
+
+
+#Link	
+#record (mbbi,"$(P)$(K):getlinkchannel")
+#	{
+#		field(DESC,"link channel")
+#		field(DTYP,"stream")
+#		field(INP,"@DG6454.proto getLINK($(N)) $(PORT)")
+#		field(ZRVL,"0")
+#		field(ONVL,"1")
+#		field(TWVL,"2")
+#		field(THVL,"3")
+#		field(FRVL,"4")
+#		field(FVVL,"5")
+#		field(SXVL,"6")
+#		field(SVVL,"7")
+#		field(EIVL,"8")
+#		field(NIVL,"9")
+#		field(ZRST, "T0")
+#		field(ONST, "T1")
+#		field(TWST, "A")
+#		field(THST, "B")
+#		field(FRST, "C")
+#		field(FVST, "D")
+#		field(SXST, "E")
+#		field(SVST, "F")
+#		field(EIST, "G")
+#		field(NIST, "H")
+#		field(SCAN, "1 second")	
+#	}
+	
+#record (mbbo,"$(P)$(K):setlinkchannel")
+#	{
+#		field(DESC,"link channel")
+#		field(DTYP,"stream")
+#		field(OUT,"@DG6454.proto setLINK($(N)) $(PORT)")
+#		field(ZRVL,"0")
+#		field(ONVL,"1")
+#		field(TWVL,"2")
+#		field(THVL,"3")
+#		field(FRVL,"4")
+#		field(FVVL,"5")
+#		field(SXVL,"6")
+#		field(SVVL,"7")
+#		field(EIVL,"8")
+#		field(NIVL,"9")
+#		field(ZRST, "T0")
+#		field(ONST, "T1")
+#		field(TWST, "A")
+#		field(THST, "B")
+#		field(FRST, "C")
+#		field(FVST, "D")
+#		field(SXST, "E")
+#		field(SVST, "F")
+#		field(EIST, "G")
+#		field(NIST, "H")	
+#	}
+	
+	
+	
+###########################################################
+record(bo,$(P)$(K):setSPDL)
+	{
+		field(DESC,"Step delay")
+		field(DTYP,"stream")
+		field(OUT,"@DG6454.proto setSPDL($(N)) $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+	
+###############################################################	
+record(ao,$(P)$(K):setSSDL)
+	{
+		field(DESC,"step Size Delay")
+		field(DTYP,"stream")
+		field(OUT,"@DG6454.proto setSSDL($(N)) $(PORT)")
+	}
+
+
+record(ai,$(P)$(K):getSSDL)
+	{
+		field(DESC,"step Size Delay")
+		field(DTYP,"stream")
+		field(INP,"@DG6454.proto getSSDL($(N)) $(PORT)")
+		field(SCAN, "1 second")
+	}
+
+###########################################################
+record(bo,$(P)setCLS)
+	{
+		field(DESC,"clear status")
+		field(DTYP,"stream")
+		field(OUT,"@DG6454.proto setCLS $(PORT)")
+		field(ZNAM,"No")
+		field(ONAM,"Yes")
+	}
+	
+
