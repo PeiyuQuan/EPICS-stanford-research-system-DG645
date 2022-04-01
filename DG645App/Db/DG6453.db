@@ -43,4 +43,113 @@ record(longin,$(P)$(L):getSSPS)
 		field(SCAN, "1 second")
 	}
 
+##################################################################
+record(ao,$(P)$(L):setLAMP)
+	{
+		field(DESC,"Level Amplitude")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setLAMP($(N)) $(PORT)")
+	}
+
+
+record(ai,$(P)$(L):getLAMP)
+	{
+		field(DESC,"Level Amplitude")
+		field(DTYP,"stream")
+		field(INP,"@DG6453.proto getLAMP($(N)) $(PORT)")
+		field(SCAN, "1 second")
+	}
+
+##################################################################
+record(ao,$(P)$(L):setLOFF)
+	{
+		field(DESC,"Level Offset")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setLOFF($(N)) $(PORT)")
+	}
+
+
+record(ai,$(P)$(L):getLOFF)
+	{
+		field(DESC,"Level Offset")
+		field(DTYP,"stream")
+		field(INP,"@DG6453.proto getLOFF($(N)) $(PORT)")
+		field(SCAN, "1 second")
+	}
+
+##################################################################	
+record(bo,$(P)$(L):setLPOL)
+	{
+		field(DESC,"Level Polarity")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setLPOL($(N)) $(PORT)")
+		field(ZNAM, "negative")
+		field(ONAM, "Positive")
+	}
+
+
+record(bi,$(P)$(L):getLPOL)
+	{
+		field(DESC,"Level Polarity")
+		field(DTYP,"stream")
+		field(INP,"@DG6453.proto getLPOL($(N)) $(PORT)")
+		field(ZNAM, "negative")
+		field(ONAM, "Positive")
+		field(SCAN, "1 second")
+	}
+	
+	
+###############################################
+record(bo,$(P)$(L):setSPLA)
+	{
+		field(DESC,"Step Level Amplitube")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setSPLA($(N)) $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+
+###############################################
+record(bo,$(P)$(L):setSPLO)
+	{
+		field(DESC,"Step Level Offset")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setSPLO($(N)) $(PORT)")
+		field(ZNAM,"down")
+		field(ONAM,"up")
+	}
+
+####################################################################	
+record(ao,$(P)$(L):setSSLA)
+	{
+		field(DESC,"Step Siza Level Amplitude")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setSSLA($(N)) $(PORT)")
+	}
+
+
+record(ai,$(P)$(L):getSSLA)
+	{
+		field(DESC,"Step Siza Level Amplitude")
+		field(DTYP,"stream")
+		field(INP,"@DG6453.proto getSSLA($(N)) $(PORT)")
+		field(SCAN, "1 second")
+	}
+	
+##################################################################
+record(ao,$(P)$(L):setSSLO)
+	{
+		field(DESC,"step Size Level Offset")
+		field(DTYP,"stream")
+		field(OUT,"@DG6453.proto setSSLO($(N)) $(PORT)")
+	}
+
+
+record(ai,$(P)$(L):getSSLO)
+	{
+		field(DESC,"step Size Level Offset")
+		field(DTYP,"stream")
+		field(INP,"@DG6453.proto getSSLO($(N)) $(PORT)")
+		field(SCAN, "1 second")
+	}
 
