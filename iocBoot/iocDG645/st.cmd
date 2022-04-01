@@ -29,7 +29,6 @@ asynSetTraceIOMask("serial1",0,ESCAPE)
 asynSetTraceMask("serial1",0,DRIVER|ERROR|FLOW)
 
 
-dbLoadRecords("${TOP}/DG645App/Db/DG645.db","P=$(PREFIX),PORT=serial1")
 dbLoadRecords("${TOP}/DG645App/Db/DG6451.db","P=$(PREFIX),PORT=serial1")
 dbLoadRecords("${TOP}/DG645App/Db/DG6452.db","P=$(PREFIX),PORT=serial1,M=m1,N=1")
 dbLoadRecords("${TOP}/DG645App/Db/DG6452.db","P=$(PREFIX),PORT=serial1,M=m2,N=2")
