@@ -16,7 +16,7 @@ epicsEnvSet ("STREAM_PROTOCOL_PATH", "${TOP}/DG645App/Db")
 epicsEnvSet("PREFIX", "SLAC:DG645:")
 epicsEnvSet("PORT", "serial1")
 
-drvAsynIPPortConfigure("serial1", "192.168.0.10:4002<192.168.0.10:4002/> COM", 0, 0, 0)
+drvAsynIPPortConfigure("serial1", "/dev/ttyUSB0", 0, 0, 0)
 asynOctetSetInputEos("serial1",0,"\r\n")
 asynOctetSetOutputEos("serial1",0,"\r\n")
 asynSetOption("serial1",0,"baud","19200")
