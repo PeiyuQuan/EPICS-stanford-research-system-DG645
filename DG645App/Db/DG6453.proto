@@ -12,3 +12,29 @@ setSPPS {out "SPPS \$1,%d;";}
 getSSPS {out "SSPS?\$1"; in "%d;";}
 setSSPS {out "SSPS \$1,%d;";}
 
+#Level Amplitude
+setLAMP {out "LAMP \$1,%f;";}
+getLAMP {out "LAMP?\$1"; in "%f;";}
+
+
+#Level Offset
+setLOFF {out "LOFF \$1,%f;";}
+getLOFF {out "LOFF?\$1"; in "%f;";}
+
+#Level Polarity
+setLPOL {out "LPOL \$1,%d;";}
+getLPOL {out "LPOL?\$1"; in "%d;";}
+
+#Step Level Amplitube
+setSPLA {out "SPLA \$1,%d;";}
+
+#Step Level Offset
+setSPLO {out "SPLO \$1,%d;";}
+
+#Step Size Level Amplitude
+setSSLA {out "SSLA \$1,%f;";}
+getSSLA {out "SSLA?\$1"; in "%f";}
+
+#step Size Level Offset
+setSSLO {out "SSLO \$1,%f;";}
+getSSLO {out "SSLO?\$1"; in "%f";}
