@@ -1,82 +1,82 @@
 #Remote
-setREMT {out "REMT;";}
+setREMT {out "REMT";}
 
 ####Trigger Commands
-setADVT {out "ADVT %d;";}
-getADVT {out "ADVT?"; in "%d;";}
+setADVT {out "ADVT %d";}
+getADVT {out "ADVT?"; in "%d";}
 
 #set (query) the trigger holdoff
-setHOLD {out "HOLD %f;";}
-getHOLD {out "HOLD?"; in "%f;";}
+setHOLD {out "HOLD %f";}
+getHOLD {out "HOLD?"; in "%f";}
 
 #set (query) the trigger inhibit state
-setINHB {out "INHB %d;";}
-getINHB {out "INHB?"; in "%d;";}
+setINHB {out "INHB %d";}
+getINHB {out "INHB?"; in "%d";}
 
 
 #Step Holdoff
 setSPHD {out "SPHD %d";}
 
 #step trigger level
-setSPTL{out "SPTL %d;";}
+setSPTL{out "SPTL %d";}
 
 #step trigger rate
-setSPTR {out "SPTR %d;";}
+setSPTR {out "SPTR %d";}
 
 #step size trigger holdoff
-setSSHD {out "SSHD %f;";}
-getSSHD {out "SSHD?"; in "%f;";}
+setSSHD {out "SSHD %f";}
+getSSHD {out "SSHD?"; in "%f";}
 
 #Step size trigger level
-getSSTL {out"SSTL?"; in "%f;";}
-setSSTL {out "SSTL %f;";}
+getSSTL {out"SSTL?"; in "%f";}
+setSSTL {out "SSTL %f";}
 
 #step size trigger rate
-setSSTR {out "SSTR %f;";}
-getSSTR {out "SSTR?"; in "%f;";}
+setSSTR {out "SSTR %f";}
+getSSTR {out "SSTR?"; in "%f";}
 
 #trigger level
-setTLVL {out "TLVL %f;";}
-getTLVL {out "TLVL?"; in "%f;";}
+setTLVL {out "TLVL %f";}
+getTLVL {out "TLVL?"; in "%f";}
 
 #trigger rate
-getTRAT{out "TRAT?"; in "%f;";}
-setTRAT{out "TRAT %f;";}
+getTRAT{out "TRAT?"; in "%f";}
+setTRAT{out "TRAT %f";}
 
 #trigger source
-setTSRC {out "TSRC %d;";}
-getTSRC {out "TSRC?"; in "%d;";}
+setTSRC {out "TSRC %d";}
+getTSRC {out "TSRC?"; in "%d";}
 
 #Burst Mode
-setBURM {out "BURM %d;";}
-getBURM {out "BURM?"; in "%d;";}
+setBURM {out "BURM %d";}
+getBURM {out "BURM?"; in "%d";}
 
 #Burst Count
-setBURC {out "BURC %d;";}
-getBURC {out "BURC?"; in "%d;";}
+setBURC {out "BURC %d";}
+getBURC {out "BURC?"; in "%d";}
 
 #Burst Delay
-setBURD {out "BURD %f;";}
-getBURD {out "BURD?"; in "%f;";}
+setBURD {out "BURD %f";}
+getBURD {out "BURD?"; in "%f";}
 
 #Burst Period
-getBURP {out "BURP?"; in "%f;";}
-setBURP {out "BURP %f;";}
+getBURP {out "BURP?"; in "%f";}
+setBURP {out "BURP %f";}
 
 #Burst T0 Configure
-setBURT {out "BURT %d;";}
-getBURT {out "BURT?"; in "%d;";}
+setBURT {out "BURT %d";}
+getBURT {out "BURT?"; in "%d";}
 
 #Step Burst Count
-setSPBC {out "SPBC %d;";}
-setSPBD {out "SPBD %d;";}
-setSPBP {out "SPBP %d;";}
+setSPBC {out "SPBC %d";}
+setSPBD {out "SPBD %d";}
+setSPBP {out "SPBP %d";}
 
-setSSBC {out "SSBC %d;";}
-getSSBC {out "SSBC?"; in "%d;";}
+setSSBC {out "SSBC %d";}
+getSSBC {out "SSBC?"; in "%d";}
 
-setSSBD {out "SSBD %f;";}
-getSSBD {out "SSBD?"; in "%f;";}
+setSSBD {out "SSBD %f";}
+getSSBD {out "SSBD?"; in "%f";}
 
-setSSBP {out "SSBP %f;";}
-getSSBP {out "SSBP?"; in "%f;";}
+setSSBP {out "SSBP %f";}
+getSSBP {out "SSBP?"; in "%f";}
