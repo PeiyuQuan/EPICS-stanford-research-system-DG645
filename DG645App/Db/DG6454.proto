@@ -1,21 +1,19 @@
-#Remote
-setREMT {out "REMT;";}
 
 #Delay
-setDlay {out "DLAY \$1,%d,%(\$2)+f;";}
+setDlay {out "DLAY \$1,%d,%(\$2)+f";}
 getDlay {out "DLAY?\$1"; in "%d,%(\$2)+f"}
 
 #Link
-#setLINK {out "LINK \$1,%d;";}
-#getLINK {out "LINK?\$1"; in"%d;";}
+#setLINK {out "LINK \$1,%d";}
+#getLINK {out "LINK?\$1"; in"%d";}
 
 #Step delay
-setSPDL {out "SPDL \$1,%d;";}
+setSPDL {out "SPDL \$1,%d";}
 
 #step Size Delay
-setSSDL {out "SSDL \$1,%+f;";}
-getSSDL {out "SSDL?\$1"; in "%+f;";}
+setSSDL {out "SSDL \$1,%+f";}
+getSSDL {out "SSDL?\$1"; in "%+f";}
 
 #Clear Status
-setCLS {out "*CLS;";}
+setCLS {out "*CLS";}
 
