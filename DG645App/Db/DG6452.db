@@ -1,6 +1,6 @@
 
 #######################################################
-record(longout,$(P)$(M):setPHAS)
+record(longout, "$(P)$(M):setPHAS")
 	{
 		field(DESC, "set phase prescale")
 		field(DTYP, "stream")
@@ -8,14 +8,14 @@ record(longout,$(P)$(M):setPHAS)
 	}
 
 
-record(longin,$(P)$(M):getPHAS)
+record(longin, "$(P)$(M):getPHAS")
 	{
 		field(DESC, "set phase prescale")
 		field(DTYP, "stream")
 		field(INP, "@DG6452.proto getPHAS($(N)) $(PORT)")
 	}
 #####################################################
-record(bo,$(P)$(M):setSPPH)
+record(bo, "$(P)$(M):setSPPH")
 	{
 		field(DESC, "step prescale phase dir")
 		field(DTYP, "stream")
@@ -25,14 +25,14 @@ record(bo,$(P)$(M):setSPPH)
 	}	
 	
 ######################################################################	
-record(longout,"$(P)$(M):setSSPH")
+record(longout, "$(P)$(M):setSSPH")
 	{
 		field(DESC, "Step Prescale phase")
 		field(DTYP, "stream")
 		field(OUT, "@DG6452.proto setSSPH($(N)) $(PORT)")
 	}
 	
-record(longin,"$(P)$(M):getSSPH")
+record(longin, "$(P)$(M):getSSPH")
 	{
 		field(DESC, "Step Prescale phase")
 		field(DTYP, "stream")
