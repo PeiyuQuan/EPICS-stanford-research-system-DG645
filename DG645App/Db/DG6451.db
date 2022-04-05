@@ -1,5 +1,5 @@
 #set remote
-record(bo, $(P)setREMT)
+record(bo, "$(P)setREMT")
 	{
 		field(DESC, "remote")
 		field(DTYP, "stream")
@@ -11,7 +11,7 @@ record(bo, $(P)setREMT)
 
 	
 ################################################	
-record(bi,"$(P)getADVT")
+record(bi, "$(P)getADVT")
 	{
 		field(DESC,"advanced trigger enable")
 		field(DTYP,"stream")
@@ -21,7 +21,7 @@ record(bi,"$(P)getADVT")
 		field(SCAN,"1 second")
 	}
 	
-record(bo,"$(P)setADVT")
+record(bo, "$(P)setADVT")
 	{
 		field(DESC,"advanced trigger enable")
 		field(DTYP,"stream")
@@ -31,7 +31,7 @@ record(bo,"$(P)setADVT")
 	}
 
 #########################################################	
-record(ai,"$(P)getHOLD")
+record(ai, "$(P)getHOLD")
 	{
 		field(DESC,"trigger holdoff")
 		field(DTYP,"stream")
@@ -40,7 +40,7 @@ record(ai,"$(P)getHOLD")
 		field(SCAN,"1 second")
 	}
 	
-record(ao,"$(P)setHOLD")
+record(ao, "$(P)setHOLD")
 	{
 		field(DESC,"trigger holdoff")
 		field(DTYP,"stream")
@@ -50,7 +50,7 @@ record(ao,"$(P)setHOLD")
 
 
 ##############################################################	
-record(mbbo,$(P)setINHB)
+record(mbbo, "$(P)setINHB")
 	{
 		field(DESC,"trigger inhibit")
 		field(DTYP,"stream")
@@ -69,7 +69,7 @@ record(mbbo,$(P)setINHB)
 		field(FVST,"AB,CD,EF,and GH")
 	}
 	
-record(mbbi,$(P)getINHB)
+record(mbbi, "$(P)getINHB")
 	{
 		field(DESC,"trigger inhibit")
 		field(DTYP,"stream")
@@ -91,7 +91,7 @@ record(mbbi,$(P)getINHB)
 
 
 #################################################
-record(bo,"$(P)setSPHD")
+record(bo, "$(P)setSPHD")
 	{
 		field(DESC,"Step holdoff")
 		field(DTYP,"stream")
@@ -103,7 +103,7 @@ record(bo,"$(P)setSPHD")
 
 ######################################################	
 
-record(bo,"$(P)setSPTL")
+record(bo, "$(P)setSPTL")
 	{
 		field(DESC,"Step Trigger Level")
 		field(DTYP,"stream")
@@ -114,7 +114,7 @@ record(bo,"$(P)setSPTL")
 	
 ####################################################
 
-record(bo,"$(P)setSPTR")
+record(bo, "$(P)setSPTR")
 	{
 		field(DESC,"Step Trigger Level")
 		field(DTYP,"stream")
@@ -124,7 +124,7 @@ record(bo,"$(P)setSPTR")
 	}
 	
 ########################################################
-record(ao,"$(P)setSSHD")
+record(ao, "$(P)setSSHD")
 	{
 		field(DESC,"Step size trigger holdoff")
 		field(DTYP,"stream")
@@ -132,7 +132,7 @@ record(ao,"$(P)setSSHD")
 		field(EGU,"second")
 	}
 	
-record(ai,"$(P)getSSHD")
+record(ai, "$(P)getSSHD")
 	{
 		field(DESC,"Step size trigger holdoff")
 		field(DTYP,"stream")
@@ -142,7 +142,7 @@ record(ai,"$(P)getSSHD")
 	}
 
 ########################################################
-record(ao,"$(P)setSSTL")
+record(ao, "$(P)setSSTL")
 	{
 		field(DESC,"Step size trigger Level")
 		field(DTYP,"stream")
@@ -150,7 +150,7 @@ record(ao,"$(P)setSSTL")
 #		field(EGU,"second")
 	}
 	
-record(ai,"$(P)getSSTL")
+record(ai, "$(P)getSSTL")
 	{
 		field(DESC,"Step size trigger holdoff")
 		field(DTYP,"stream")
@@ -160,7 +160,7 @@ record(ai,"$(P)getSSTL")
 	}
 
 ########################################################
-record(ao,"$(P)setSSTR")
+record(ao, "$(P)setSSTR")
 	{
 		field(DESC,"Step size trigger rate")
 		field(DTYP,"stream")
@@ -168,7 +168,7 @@ record(ao,"$(P)setSSTR")
 #		field(EGU,"second")
 	}
 	
-record(ai,"$(P)getSSTR")
+record(ai, "$(P)getSSTR")
 	{
 		field(DESC,"Step size trigger rate")
 		field(DTYP,"stream")
@@ -179,7 +179,7 @@ record(ai,"$(P)getSSTR")
 
 
 ########################################################
-record(ai,"$(P)getTLVL")
+record(ai, "$(P)getTLVL")
 	{
 		field(DESC, "trigger Level")
 		field(DTYP, "stream")
@@ -188,7 +188,7 @@ record(ai,"$(P)getTLVL")
 		field(SCAN, "1 second")
 	}
 	
-record(ao,"$(P)setTLVL")
+record(ao, "$(P)setTLVL")
 	{
 		field(DESC, "trigger Level")
 		field(DTYP, "stream")
@@ -197,7 +197,7 @@ record(ao,"$(P)setTLVL")
 	}
 
 ##################################################	
-record(ai,"$(P)getTRAT")
+record(ai, "$(P)getTRAT")
 	{
 		field(DESC,"trigger rate")
 		field(DTYP,"stream")
@@ -206,7 +206,7 @@ record(ai,"$(P)getTRAT")
 		field(SCAN,"1 second")
 	}
 	
-record(ao,"$(P)setTRAT")
+record(ao, "$(P)setTRAT")
 	{
 		field(DESC,"trigger rate")
 		field(DTYP,"stream")
@@ -216,7 +216,7 @@ record(ao,"$(P)setTRAT")
 
 
 ################################################################
-record(mbbo,$(P)setTSRC)
+record(mbbo, "$(P)setTSRC")
 	{
 		field(DESC,"trigger Source")
 		field(DTYP,"stream")
@@ -237,7 +237,7 @@ record(mbbo,$(P)setTSRC)
 		field(SXST, "Line")
 	}
 	
-record(mbbi,$(P)getTSRC)
+record(mbbi, "$(P)getTSRC")
 	{
 		field(DESC, "Trigger Source")
 		field(DTYP,"stream")
@@ -260,14 +260,14 @@ record(mbbi,$(P)getTSRC)
 	}
 	
 ################################################################	
-record(longout,"$(P)setBURC")
+record(longout, "$(P)setBURC")
 	{
 		field(DESC,"Burst Count")
 		field(DTYP,"stream")
 		field(OUT,"@DG6451.proto setBURC $(PORT)")
 	}
 	
-record(longin,"$(P)getBURC")
+record(longin, "$(P)getBURC")
 	{
 		field(DESC,"Butst Count")
 		field(DTYP,"stream")
@@ -276,7 +276,7 @@ record(longin,"$(P)getBURC")
 	}	
 	
 ###########################################################
-record(ao,"$(P)setBURD")
+record(ao, "$(P)setBURD")
 	{
 		field(DESC,"Burst Delay")
 		field(DTYP,"stream")
@@ -284,7 +284,7 @@ record(ao,"$(P)setBURD")
 		field(EGU,"seconds")
 	}
 	
-record(ai,"$(P)getBURD")
+record(ai, "$(P)getBURD")
 	{
 		field(DESC,"Burst Delay")
 		field(DTYP,"stream")
@@ -294,7 +294,7 @@ record(ai,"$(P)getBURD")
 	}
 	
 ################################################################	
-record(bi,"$(P)getBURM")
+record(bi, "$(P)getBURM")
 	{
 		field(DESC,"Burst Mode")
 		field(DTYP,"stream")
@@ -304,7 +304,7 @@ record(bi,"$(P)getBURM")
 		field(SCAN,"1 second")
 	}
 	
-record(bo,"$(P)setBURM")
+record(bo, "$(P)setBURM")
 	{
 		field(DESC, "Burst Mode")
 		field(DTYP, "stream")
@@ -314,7 +314,7 @@ record(bo,"$(P)setBURM")
 	}
 
 ############################################	
-record(ao,"$(P)setBURP")
+record(ao, "$(P)setBURP")
 	{
 		field(DESC,"Burst Period")
 		field(DTYP,"stream")
@@ -322,7 +322,7 @@ record(ao,"$(P)setBURP")
 		field(EGU,"seconds")
 	}
 	
-record(ai,"$(P)getBURP")
+record(ai, "$(P)getBURP")
 	{
 		field(DESC,"Burst Period")
 		field(DTYP,"stream")
@@ -332,7 +332,7 @@ record(ai,"$(P)getBURP")
 	}
 	
 ##########################################	
-record(bi,"$(P)getBURT")
+record(bi, "$(P)getBURT")
 	{
 		field(DESC,"Burst T0 configuration")
 		field(DTYP,"stream")
@@ -342,7 +342,7 @@ record(bi,"$(P)getBURT")
 		field(SCAN,"1 second")
 	}
 	
-record(bo,"$(P)setBURT")
+record(bo, "$(P)setBURT")
 	{
 		field(DESC,"Burst T0 configuration")
 		field(DTYP,"stream")
@@ -352,7 +352,7 @@ record(bo,"$(P)setBURT")
 	}
 	
 #######################################
-record(bo,"$(P)setSPBC")
+record(bo, "$(P)setSPBC")
 	{
 		field(DESC,"Step Burst Count")
 		field(DTYP,"stream")
@@ -361,7 +361,7 @@ record(bo,"$(P)setSPBC")
 		field(ONAM,"up")
 	}
 	
-record(bo,"$(P)setSPBD")
+record(bo, "$(P)setSPBD")
 	{
 		field(DESC,"Step Burst Delay")
 		field(DTYP,"stream")
@@ -370,7 +370,7 @@ record(bo,"$(P)setSPBD")
 		field(ONAM,"up")
 	}
 	
-record(bo,"$(P)setSPBP")
+record(bo, "$(P)setSPBP")
 	{
 		field(DESC,"Step Burst Period")
 		field(DTYP,"stream")
@@ -379,7 +379,7 @@ record(bo,"$(P)setSPBP")
 		field(ONAM,"up")
 	}
 	
-record(longin,"$(P)getSSBC")
+record(longin, "$(P)getSSBC")
 	{
 		field(DESC,"Step size Burst Count")
 		field(DTYP,"stream")
@@ -387,14 +387,14 @@ record(longin,"$(P)getSSBC")
 		field(SCAN,"1 second")
 	}
 	
-record(longout,"$(P)setSSBC")
+record(longout, "$(P)setSSBC")
 	{
 		field(DESC,"Step size Burst Count")
 		field(DTYP,"stream")
 		field(OUT,"@DG6451.proto setSSBC $(PORT)")
 	}
 	
-record(ao,"$(P)setSSBD")
+record(ao, "$(P)setSSBD")
 	{
 		field(DESC,"Step size burst delay")
 		field(DTYP,"stream")
@@ -402,7 +402,7 @@ record(ao,"$(P)setSSBD")
 		field(EGU,"seconds")
 	}
 	
-record(ai,"$(P)getSSBD")
+record(ai, "$(P)getSSBD")
 	{
 		field(DESC,"Step size burst delay")
 		field(DTYP,"stream")
@@ -411,7 +411,7 @@ record(ai,"$(P)getSSBD")
 		field(SCAN,"1 second")
 	}
 
-record(ao,"$(P)setSSBP")
+record(ao, "$(P)setSSBP")
 	{
 		field(DESC,"Step size burst Period")
 		field(DTYP,"stream")
@@ -419,7 +419,7 @@ record(ao,"$(P)setSSBP")
 		field(EGU,"seconds")
 	}
 	
-record(ai,"$(P)getSSBP")
+record(ai, "$(P)getSSBP")
 	{
 		field(DESC,"Step size burst Period")
 		field(DTYP,"stream")
