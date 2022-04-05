@@ -1,5 +1,5 @@
 
-record(longout,$(P)$(L):setPRES)
+record(longout, "$(P)$(L):setPRES")
 	{
 		field(DESC,"set prescale factor")
 		field(DTYP,"stream")
@@ -7,7 +7,7 @@ record(longout,$(P)$(L):setPRES)
 	}
 
 
-record(longin,$(P)$(L):getPRES)
+record(longin, "$(P)$(L):getPRES")
 	{
 		field(DESC,"set prescale factor")
 		field(DTYP,"stream")
@@ -17,7 +17,7 @@ record(longin,$(P)$(L):getPRES)
 
 
 ###############################################
-record(bo,$(P)$(L):setSPPS)
+record(bo, "$(P)$(L):setSPPS")
 	{
 		field(DESC,"Step prescale facotr dir")
 		field(DTYP,"stream")
@@ -27,7 +27,7 @@ record(bo,$(P)$(L):setSPPS)
 	}
 
 ######################################################	
-record(longout,$(P)$(L):setSSPS)
+record(longout, "$(P)$(L):setSSPS")
 	{
 		field(DESC,"step prescale factor")
 		field(DTYP,"stream")
@@ -35,7 +35,7 @@ record(longout,$(P)$(L):setSSPS)
 	}
 
 
-record(longin,$(P)$(L):getSSPS)
+record(longin, "$(P)$(L):getSSPS")
 	{
 		field(DESC,"step prescale factor")
 		field(DTYP,"stream")
@@ -44,7 +44,7 @@ record(longin,$(P)$(L):getSSPS)
 	}
 
 ##################################################################
-record(ao,$(P)$(L):setLAMP)
+record(ao, "$(P)$(L):setLAMP")
 	{
 		field(DESC,"Level Amplitude")
 		field(DTYP,"stream")
@@ -52,7 +52,7 @@ record(ao,$(P)$(L):setLAMP)
 	}
 
 
-record(ai,$(P)$(L):getLAMP)
+record(ai, "$(P)$(L):getLAMP")
 	{
 		field(DESC,"Level Amplitude")
 		field(DTYP,"stream")
@@ -61,7 +61,7 @@ record(ai,$(P)$(L):getLAMP)
 	}
 
 ##################################################################
-record(ao,$(P)$(L):setLOFF)
+record(ao, "$(P)$(L):setLOFF")
 	{
 		field(DESC,"Level Offset")
 		field(DTYP,"stream")
@@ -69,7 +69,7 @@ record(ao,$(P)$(L):setLOFF)
 	}
 
 
-record(ai,$(P)$(L):getLOFF)
+record(ai, "$(P)$(L):getLOFF")
 	{
 		field(DESC,"Level Offset")
 		field(DTYP,"stream")
@@ -78,7 +78,7 @@ record(ai,$(P)$(L):getLOFF)
 	}
 
 ##################################################################	
-record(bo,$(P)$(L):setLPOL)
+record(bo, "$(P)$(L):setLPOL")
 	{
 		field(DESC,"Level Polarity")
 		field(DTYP,"stream")
@@ -88,7 +88,7 @@ record(bo,$(P)$(L):setLPOL)
 	}
 
 
-record(bi,$(P)$(L):getLPOL)
+record(bi, "$(P)$(L):getLPOL")
 	{
 		field(DESC,"Level Polarity")
 		field(DTYP,"stream")
@@ -100,7 +100,7 @@ record(bi,$(P)$(L):getLPOL)
 	
 	
 ###############################################
-record(bo,$(P)$(L):setSPLA)
+record(bo, "$(P)$(L):setSPLA")
 	{
 		field(DESC,"Step Level Amplitube")
 		field(DTYP,"stream")
@@ -110,7 +110,7 @@ record(bo,$(P)$(L):setSPLA)
 	}
 
 ###############################################
-record(bo,$(P)$(L):setSPLO)
+record(bo, "$(P)$(L):setSPLO")
 	{
 		field(DESC,"Step Level Offset")
 		field(DTYP,"stream")
@@ -120,7 +120,7 @@ record(bo,$(P)$(L):setSPLO)
 	}
 
 ####################################################################	
-record(ao,$(P)$(L):setSSLA)
+record(ao, "$(P)$(L):setSSLA")
 	{
 		field(DESC,"Step Siza Level Amplitude")
 		field(DTYP,"stream")
@@ -128,7 +128,7 @@ record(ao,$(P)$(L):setSSLA)
 	}
 
 
-record(ai,$(P)$(L):getSSLA)
+record(ai, "$(P)$(L):getSSLA")
 	{
 		field(DESC,"Step Siza Level Amplitude")
 		field(DTYP,"stream")
@@ -137,7 +137,7 @@ record(ai,$(P)$(L):getSSLA)
 	}
 	
 ##################################################################
-record(ao,$(P)$(L):setSSLO)
+record(ao, "$(P)$(L):setSSLO")
 	{
 		field(DESC,"step Size Level Offset")
 		field(DTYP,"stream")
@@ -145,7 +145,7 @@ record(ao,$(P)$(L):setSSLO)
 	}
 
 
-record(ai,$(P)$(L):getSSLO)
+record(ai, "$(P)$(L):getSSLO")
 	{
 		field(DESC,"step Size Level Offset")
 		field(DTYP,"stream")
