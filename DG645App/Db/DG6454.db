@@ -1,6 +1,6 @@
 
 #Delay
-record (mbbo,"$(P)$(K):setchannel")
+record (mbbo, "$(P)$(K):setchannel")
 	{
 		field(DESC,"Delay")
 		field(DTYP,"stream")
@@ -27,14 +27,14 @@ record (mbbo,"$(P)$(K):setchannel")
 		field(NIST, "H")	
 	}
 	
-record(ao,"$(P)$(K):setdelaytime")
+record(ao, "$(P)$(K):setdelaytime")
 	{
 	field(DESC,"Delay time")
 	}
 
 
 
-record (mbbi,"$(P)$(K):getchannel")
+record (mbbi, "$(P)$(K):getchannel")
 	{
 		field(DESC,"Delay")
 		field(DTYP,"stream")
@@ -62,7 +62,7 @@ record (mbbi,"$(P)$(K):getchannel")
 		field(SCAN, "1 second")	
 	}
 	
-record(ai,"$(P)$(K):getdelaytime")
+record(ai, "$(P)$(K):getdelaytime")
 	{
 	field(DESC,"Delay time")
 	}
@@ -127,7 +127,7 @@ record(ai,"$(P)$(K):getdelaytime")
 	
 	
 ###########################################################
-record(bo,$(P)$(K):setSPDL)
+record(bo, "$(P)$(K):setSPDL")
 	{
 		field(DESC,"Step delay")
 		field(DTYP,"stream")
@@ -137,7 +137,7 @@ record(bo,$(P)$(K):setSPDL)
 	}
 	
 ###############################################################	
-record(ao,$(P)$(K):setSSDL)
+record(ao, "$(P)$(K):setSSDL")
 	{
 		field(DESC,"step Size Delay")
 		field(DTYP,"stream")
@@ -145,7 +145,7 @@ record(ao,$(P)$(K):setSSDL)
 	}
 
 
-record(ai,$(P)$(K):getSSDL)
+record(ai, "$(P)$(K):getSSDL")
 	{
 		field(DESC,"step Size Delay")
 		field(DTYP,"stream")
@@ -154,7 +154,7 @@ record(ai,$(P)$(K):getSSDL)
 	}
 
 ###########################################################
-record(bo,$(P)setCLS)
+record(bo, "$(P)setCLS")
 	{
 		field(DESC,"clear status")
 		field(DTYP,"stream")
