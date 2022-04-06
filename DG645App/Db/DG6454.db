@@ -30,6 +30,7 @@ record (mbbo, "$(P)$(K):setchannel")
 record(ao, "$(P)$(K):setdelaytime")
 	{
 	field(DESC,"Delay time")
+	field(PREC, "6")
 	}
 
 
@@ -65,6 +66,7 @@ record (mbbi, "$(P)$(K):getchannel")
 record(ai, "$(P)$(K):getdelaytime")
 	{
 	field(DESC,"Delay time")
+	field(PREC, "6")
 	}
 
 
