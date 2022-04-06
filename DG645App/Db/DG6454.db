@@ -142,6 +142,7 @@ record(ao, "$(P)$(K):setSSDL")
 		field(DESC,"step Size Delay")
 		field(DTYP,"stream")
 		field(OUT,"@DG6454.proto setSSDL($(N)) $(PORT)")
+		field(PREC, "6")
 	}
 
 
@@ -150,6 +151,7 @@ record(ai, "$(P)$(K):getSSDL")
 		field(DESC,"step Size Delay")
 		field(DTYP,"stream")
 		field(INP,"@DG6454.proto getSSDL($(N)) $(PORT)")
+		field(PREC, "6")
 		field(SCAN, "1 second")
 	}
 
