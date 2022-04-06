@@ -13,6 +13,7 @@ record(longin, "$(P)$(M):getPHAS")
 		field(DESC, "set phase prescale")
 		field(DTYP, "stream")
 		field(INP, "@DG6452.proto getPHAS($(N)) $(PORT)")
+		field(SCAN, "1 second")
 	}
 #####################################################
 record(bo, "$(P)$(M):setSPPH")
