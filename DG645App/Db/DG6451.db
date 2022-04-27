@@ -281,6 +281,7 @@ record(ao, "$(P)setBURD")
 		field(DESC,"Burst Delay")
 		field(DTYP,"stream")
 		field(OUT,"@DG6451.proto setBURD $(PORT)")
+		field(PREC, "6")
 		field(EGU,"seconds")
 	}
 	
@@ -289,6 +290,7 @@ record(ai, "$(P)getBURD")
 		field(DESC,"Burst Delay")
 		field(DTYP,"stream")
 		field(INP,"@DG6451.proto getBURD $(PORT)")
+		field(PREC, "6")
 		field(EGU,"seconds")
 		field(SCAN,"1 second")
 	}
@@ -319,6 +321,7 @@ record(ao, "$(P)setBURP")
 		field(DESC,"Burst Period")
 		field(DTYP,"stream")
 		field(OUT,"@DG6451.proto setBURP $(PORT)")
+		field(PREC, "6")
 		field(EGU,"seconds")
 	}
 	
@@ -327,6 +330,7 @@ record(ai, "$(P)getBURP")
 		field(DESC,"Burst Period")
 		field(DTYP,"stream")
 		field(INP,"@DG6451.proto getBURP $(PORT)")
+		field(PREC, "6")
 		field(EGU,"seconds")
 		field(SCAN,"1 second")
 	}
