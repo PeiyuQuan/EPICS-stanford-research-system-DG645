@@ -1,0 +1,1770 @@
+
+file {
+	name="/home/quan/adls/SRSDG645.adl"
+	version=030117
+}
+display {
+	object {
+		x=2714
+		y=181
+		width=820
+		height=300
+	}
+	clr=14
+	bclr=4
+	cmap=""
+	gridSpacing=5
+	gridOn=0
+	snapToGrid=0
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+text {
+	object {
+		x=273
+		y=7
+		width=300
+		height=20
+	}
+	"basic attribute" {
+		clr=12
+	}
+	textix="Stanford Research System DG645"
+}
+composite {
+	object {
+		x=5
+		y=30
+		width=810
+		height=231
+	}
+	"composite name"=""
+	children {
+		composite {
+			object {
+				x=5
+				y=30
+				width=809
+				height=139
+			}
+			"composite name"=""
+			children {
+				composite {
+					object {
+						x=11
+						y=37
+						width=800
+						height=130
+					}
+					"composite name"=""
+					children {
+						composite {
+							object {
+								x=11
+								y=37
+								width=195
+								height=58
+							}
+							"composite name"=""
+							children {
+								"message button" {
+									object {
+										x=186
+										y=76
+										width=20
+										height=15
+									}
+									control {
+										chan="$(P)k2:setSPDL"
+										clr=14
+										bclr=32
+									}
+									label="down"
+									press_msg="0"
+								}
+								text {
+									object {
+										x=14
+										y=40
+										width=13
+										height=19
+									}
+									"basic attribute" {
+										clr=54
+									}
+									textix="A"
+								}
+								"text update" {
+									object {
+										x=31
+										y=37
+										width=29
+										height=19
+									}
+									monitor {
+										chan="$(P)k2:getchannel"
+										clr=14
+										bclr=20
+									}
+									limits {
+									}
+								}
+								"text update" {
+									object {
+										x=61
+										y=38
+										width=134
+										height=19
+									}
+									monitor {
+										chan="$(P)k2:getdelaytime"
+										clr=14
+										bclr=41
+									}
+									limits {
+									}
+								}
+								menu {
+									object {
+										x=26
+										y=57
+										width=35
+										height=19
+									}
+									control {
+										chan="$(P)k2:setchannel"
+										clr=14
+										bclr=4
+									}
+								}
+								"text entry" {
+									object {
+										x=61
+										y=58
+										width=134
+										height=19
+									}
+									control {
+										chan="$(P)k2:setdelaytime"
+										clr=14
+										bclr=30
+									}
+									limits {
+									}
+								}
+								"message button" {
+									object {
+										x=11
+										y=76
+										width=13
+										height=15
+									}
+									control {
+										chan="$(P)k2:setSPDL"
+										clr=14
+										bclr=32
+									}
+									label="up"
+									press_msg="1"
+								}
+								"text entry" {
+									object {
+										x=24
+										y=76
+										width=80
+										height=19
+									}
+									control {
+										chan="$(P)k2:setSSDL"
+										clr=14
+										bclr=32
+									}
+									limits {
+									}
+								}
+								"text update" {
+									object {
+										x=105
+										y=76
+										width=80
+										height=15
+									}
+									monitor {
+										chan="$(P)k2:getSSDL"
+										clr=14
+										bclr=58
+									}
+									limits {
+									}
+								}
+							}
+						}
+						"message button" {
+							object {
+								x=387
+								y=76
+								width=20
+								height=15
+							}
+							control {
+								chan="$(P)k3:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						text {
+							object {
+								x=216
+								y=40
+								width=13
+								height=19
+							}
+							"basic attribute" {
+								clr=54
+							}
+							textix="B"
+						}
+						"text update" {
+							object {
+								x=233
+								y=37
+								width=29
+								height=19
+							}
+							monitor {
+								chan="$(P)k2:getchannel"
+								clr=14
+								bclr=20
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=263
+								y=38
+								width=134
+								height=19
+							}
+							monitor {
+								chan="$(P)k3:getdelaytime"
+								clr=14
+								bclr=41
+							}
+							limits {
+							}
+						}
+						menu {
+							object {
+								x=228
+								y=57
+								width=35
+								height=19
+							}
+							control {
+								chan="$(P)k3:setchannel"
+								clr=14
+								bclr=4
+							}
+						}
+						"text entry" {
+							object {
+								x=263
+								y=58
+								width=134
+								height=19
+							}
+							control {
+								chan="$(P)k3:setdelaytime"
+								clr=14
+								bclr=30
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=213
+								y=76
+								width=13
+								height=15
+							}
+							control {
+								chan="$(P)k3:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=226
+								y=76
+								width=80
+								height=19
+							}
+							control {
+								chan="$(P)k3:setSSDL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=307
+								y=76
+								width=80
+								height=15
+							}
+							monitor {
+								chan="$(P)k3:getSSDL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=589
+								y=76
+								width=20
+								height=15
+							}
+							control {
+								chan="$(P)k4:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						text {
+							object {
+								x=418
+								y=40
+								width=13
+								height=19
+							}
+							"basic attribute" {
+								clr=54
+							}
+							textix="C"
+						}
+						"text update" {
+							object {
+								x=435
+								y=37
+								width=29
+								height=19
+							}
+							monitor {
+								chan="$(P)k2:getchannel"
+								clr=14
+								bclr=20
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=465
+								y=38
+								width=134
+								height=19
+							}
+							monitor {
+								chan="$(P)k4:getdelaytime"
+								clr=14
+								bclr=41
+							}
+							limits {
+							}
+						}
+						menu {
+							object {
+								x=430
+								y=57
+								width=35
+								height=19
+							}
+							control {
+								chan="$(P)k4:setchannel"
+								clr=14
+								bclr=4
+							}
+						}
+						"text entry" {
+							object {
+								x=465
+								y=58
+								width=134
+								height=19
+							}
+							control {
+								chan="$(P)k4:setdelaytime"
+								clr=14
+								bclr=30
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=414
+								y=76
+								width=13
+								height=15
+							}
+							control {
+								chan="$(P)k4:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=428
+								y=76
+								width=80
+								height=19
+							}
+							control {
+								chan="$(P)k4:setSSDL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=508
+								y=76
+								width=80
+								height=15
+							}
+							monitor {
+								chan="$(P)k4:getSSDL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=791
+								y=76
+								width=20
+								height=15
+							}
+							control {
+								chan="$(P)k5:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						text {
+							object {
+								x=620
+								y=40
+								width=13
+								height=19
+							}
+							"basic attribute" {
+								clr=54
+							}
+							textix="D"
+						}
+						"text update" {
+							object {
+								x=636
+								y=37
+								width=29
+								height=19
+							}
+							monitor {
+								chan="$(P)k5:getchannel"
+								clr=14
+								bclr=20
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=666
+								y=38
+								width=134
+								height=19
+							}
+							monitor {
+								chan="$(P)k5:getdelaytime"
+								clr=14
+								bclr=41
+							}
+							limits {
+							}
+						}
+						menu {
+							object {
+								x=632
+								y=57
+								width=35
+								height=19
+							}
+							control {
+								chan="$(P)k5:setchannel"
+								clr=14
+								bclr=4
+							}
+						}
+						"text entry" {
+							object {
+								x=666
+								y=58
+								width=134
+								height=19
+							}
+							control {
+								chan="$(P)k5:setdelaytime"
+								clr=14
+								bclr=30
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=616
+								y=76
+								width=13
+								height=15
+							}
+							control {
+								chan="$(P)k5:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=629
+								y=76
+								width=80
+								height=19
+							}
+							control {
+								chan="$(P)k5:setSSDL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=710
+								y=76
+								width=80
+								height=15
+							}
+							monitor {
+								chan="$(P)k5:getSSDL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=186
+								y=148
+								width=20
+								height=15
+							}
+							control {
+								chan="$(P)k6:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						text {
+							object {
+								x=14
+								y=113
+								width=13
+								height=19
+							}
+							"basic attribute" {
+								clr=54
+							}
+							textix="E"
+						}
+						"text update" {
+							object {
+								x=31
+								y=109
+								width=29
+								height=19
+							}
+							monitor {
+								chan="$(P)k6:getchannel"
+								clr=14
+								bclr=20
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=61
+								y=110
+								width=134
+								height=19
+							}
+							monitor {
+								chan="$(P)k6:getdelaytime"
+								clr=14
+								bclr=41
+							}
+							limits {
+							}
+						}
+						menu {
+							object {
+								x=26
+								y=129
+								width=35
+								height=19
+							}
+							control {
+								chan="$(P)k6:setchannel"
+								clr=14
+								bclr=4
+							}
+						}
+						"text entry" {
+							object {
+								x=61
+								y=130
+								width=134
+								height=19
+							}
+							control {
+								chan="$(P)k6:setdelaytime"
+								clr=14
+								bclr=30
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=11
+								y=148
+								width=13
+								height=15
+							}
+							control {
+								chan="$(P)k6:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=24
+								y=148
+								width=80
+								height=19
+							}
+							control {
+								chan="$(P)k6:setSSDL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=105
+								y=148
+								width=80
+								height=15
+							}
+							monitor {
+								chan="$(P)k6:getSSDL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=387
+								y=148
+								width=20
+								height=15
+							}
+							control {
+								chan="$(P)k7:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						text {
+							object {
+								x=216
+								y=113
+								width=13
+								height=19
+							}
+							"basic attribute" {
+								clr=54
+							}
+							textix="F"
+						}
+						"text update" {
+							object {
+								x=233
+								y=109
+								width=29
+								height=19
+							}
+							monitor {
+								chan="$(P)k7:getchannel"
+								clr=14
+								bclr=20
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=263
+								y=110
+								width=134
+								height=19
+							}
+							monitor {
+								chan="$(P)k7:getdelaytime"
+								clr=14
+								bclr=41
+							}
+							limits {
+							}
+						}
+						menu {
+							object {
+								x=228
+								y=129
+								width=35
+								height=19
+							}
+							control {
+								chan="$(P)k7:setchannel"
+								clr=14
+								bclr=4
+							}
+						}
+						"text entry" {
+							object {
+								x=263
+								y=130
+								width=134
+								height=19
+							}
+							control {
+								chan="$(P)k7:setdelaytime"
+								clr=14
+								bclr=30
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=213
+								y=148
+								width=13
+								height=15
+							}
+							control {
+								chan="$(P)k7:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=226
+								y=148
+								width=80
+								height=19
+							}
+							control {
+								chan="$(P)k7:setSSDL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=307
+								y=148
+								width=80
+								height=15
+							}
+							monitor {
+								chan="$(P)k7:getSSDL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=589
+								y=148
+								width=20
+								height=15
+							}
+							control {
+								chan="$(P)k8:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						text {
+							object {
+								x=418
+								y=113
+								width=13
+								height=19
+							}
+							"basic attribute" {
+								clr=54
+							}
+							textix="G"
+						}
+						"text update" {
+							object {
+								x=435
+								y=109
+								width=29
+								height=19
+							}
+							monitor {
+								chan="$(P)k8:getchannel"
+								clr=14
+								bclr=20
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=465
+								y=110
+								width=134
+								height=19
+							}
+							monitor {
+								chan="$(P)k8:getdelaytime"
+								clr=14
+								bclr=41
+							}
+							limits {
+							}
+						}
+						menu {
+							object {
+								x=430
+								y=129
+								width=35
+								height=19
+							}
+							control {
+								chan="$(P)k8:setchannel"
+								clr=14
+								bclr=4
+							}
+						}
+						"text entry" {
+							object {
+								x=465
+								y=130
+								width=134
+								height=19
+							}
+							control {
+								chan="$(P)k8:setdelaytime"
+								clr=14
+								bclr=30
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=414
+								y=148
+								width=13
+								height=15
+							}
+							control {
+								chan="$(P)k8:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=428
+								y=148
+								width=80
+								height=19
+							}
+							control {
+								chan="$(P)k8:setSSDL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=508
+								y=148
+								width=80
+								height=15
+							}
+							monitor {
+								chan="$(P)k8:getSSDL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=791
+								y=148
+								width=20
+								height=15
+							}
+							control {
+								chan="$(P)k9:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						text {
+							object {
+								x=620
+								y=113
+								width=13
+								height=19
+							}
+							"basic attribute" {
+								clr=54
+							}
+							textix="H"
+						}
+						"text update" {
+							object {
+								x=636
+								y=109
+								width=29
+								height=19
+							}
+							monitor {
+								chan="$(P)k9:getchannel"
+								clr=14
+								bclr=20
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=666
+								y=110
+								width=134
+								height=19
+							}
+							monitor {
+								chan="$(P)k9:getdelaytime"
+								clr=14
+								bclr=41
+							}
+							limits {
+							}
+						}
+						menu {
+							object {
+								x=632
+								y=129
+								width=35
+								height=19
+							}
+							control {
+								chan="$(P)k9:setchannel"
+								clr=14
+								bclr=4
+							}
+						}
+						"text entry" {
+							object {
+								x=666
+								y=130
+								width=134
+								height=19
+							}
+							control {
+								chan="$(P)k9:setdelaytime"
+								clr=14
+								bclr=30
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=616
+								y=148
+								width=13
+								height=15
+							}
+							control {
+								chan="$(P)k9:setSPDL"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=629
+								y=148
+								width=80
+								height=19
+							}
+							control {
+								chan="$(P)k9:setSSDL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=710
+								y=148
+								width=80
+								height=15
+							}
+							monitor {
+								chan="$(P)k9:getSSDL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+					}
+				}
+				rectangle {
+					object {
+						x=5
+						y=30
+						width=809
+						height=139
+					}
+					"basic attribute" {
+						clr=14
+						fill="outline"
+					}
+					"dynamic attribute" {
+						chan="$(P)setCLS"
+					}
+				}
+			}
+		}
+		composite {
+			object {
+				x=5
+				y=171
+				width=810
+				height=90
+			}
+			"composite name"=""
+			children {
+				composite {
+					object {
+						x=8
+						y=172
+						width=804
+						height=86
+					}
+					"composite name"=""
+					children {
+						text {
+							object {
+								x=76
+								y=177
+								width=86
+								height=15
+							}
+							"basic attribute" {
+								clr=14
+							}
+							textix="Hold off"
+						}
+						"text entry" {
+							object {
+								x=11
+								y=195
+								width=69
+								height=23
+							}
+							control {
+								chan="$(P)setHOLD"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=81
+								y=195
+								width=69
+								height=20
+							}
+							monitor {
+								chan="$(P)getHOLD"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						text {
+							object {
+								x=151
+								y=198
+								width=40
+								height=15
+							}
+							"basic attribute" {
+								clr=53
+							}
+							textix="second"
+						}
+						"message button" {
+							object {
+								x=8
+								y=225
+								width=15
+								height=15
+							}
+							control {
+								chan="$(P)setSPHD"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=23
+								y=221
+								width=56
+								height=23
+							}
+							control {
+								chan="$(P)setSSHD"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=81
+								y=220
+								width=69
+								height=20
+							}
+							monitor {
+								chan="$(P)getSSHD"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=153
+								y=225
+								width=25
+								height=15
+							}
+							control {
+								chan="$(P)setSPHD"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						text {
+							object {
+								x=405
+								y=177
+								width=112
+								height=15
+							}
+							"basic attribute" {
+								clr=14
+							}
+							textix="Trigger Source"
+						}
+						menu {
+							object {
+								x=402
+								y=192
+								width=129
+								height=22
+							}
+							control {
+								chan="$(P)setTSRC"
+								clr=14
+								bclr=32
+							}
+						}
+						"text update" {
+							object {
+								x=535
+								y=192
+								width=172
+								height=20
+							}
+							monitor {
+								chan="$(P)getTSRC"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						text {
+							object {
+								x=405
+								y=219
+								width=52
+								height=15
+							}
+							"basic attribute" {
+								clr=14
+							}
+							textix="Inhibit"
+						}
+						menu {
+							object {
+								x=402
+								y=233
+								width=129
+								height=22
+							}
+							control {
+								chan="$(P)setINHB"
+								clr=14
+								bclr=32
+							}
+						}
+						"text update" {
+							object {
+								x=534
+								y=234
+								width=172
+								height=20
+							}
+							monitor {
+								chan="$(P)getINHB"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						text {
+							object {
+								x=230
+								y=180
+								width=129
+								height=15
+							}
+							"basic attribute" {
+								clr=14
+							}
+							textix="Trigger Level"
+						}
+						"message button" {
+							object {
+								x=208
+								y=225
+								width=15
+								height=15
+							}
+							control {
+								chan="$(P)setSPTL"
+								clr=14
+								bclr=32
+							}
+							label="up"
+							press_msg="1"
+						}
+						"text entry" {
+							object {
+								x=224
+								y=223
+								width=52
+								height=22
+							}
+							control {
+								chan="$(P)setSSTL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=278
+								y=222
+								width=60
+								height=20
+							}
+							monitor {
+								chan="$(P)getSSTL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						"message button" {
+							object {
+								x=338
+								y=225
+								width=25
+								height=15
+							}
+							control {
+								chan="$(P)setSPTL"
+								clr=14
+								bclr=32
+							}
+							label="down"
+							press_msg="0"
+						}
+						"text entry" {
+							object {
+								x=211
+								y=199
+								width=86
+								height=20
+							}
+							control {
+								chan="$(P)setTLVL"
+								clr=14
+								bclr=32
+							}
+							limits {
+							}
+						}
+						"text update" {
+							object {
+								x=299
+								y=199
+								width=86
+								height=20
+							}
+							monitor {
+								chan="$(P)getTLVL"
+								clr=14
+								bclr=58
+							}
+							limits {
+							}
+						}
+						text {
+							object {
+								x=708
+								y=172
+								width=90
+								height=15
+							}
+							"basic attribute" {
+								clr=14
+							}
+							textix="Trigger Mode"
+						}
+						composite {
+							object {
+								x=709
+								y=192
+								width=103
+								height=66
+							}
+							"composite name"=""
+							children {
+								"choice button" {
+									object {
+										x=709
+										y=192
+										width=103
+										height=45
+									}
+									control {
+										chan="$(P)setADVT"
+										clr=14
+										bclr=32
+									}
+								}
+								"text update" {
+									object {
+										x=709
+										y=239
+										width=103
+										height=19
+									}
+									monitor {
+										chan="$(P)getADVT"
+										clr=14
+										bclr=58
+									}
+									limits {
+									}
+								}
+							}
+						}
+					}
+				}
+				rectangle {
+					object {
+						x=5
+						y=171
+						width=810
+						height=90
+					}
+					"basic attribute" {
+						clr=14
+						fill="outline"
+					}
+				}
+			}
+		}
+	}
+}
+composite {
+	object {
+		x=5
+		y=267
+		width=457
+		height=25
+	}
+	"composite name"=""
+	children {
+		composite {
+			object {
+				x=143
+				y=267
+				width=319
+				height=25
+			}
+			"composite name"=""
+			children {
+				"text entry" {
+					object {
+						x=143
+						y=268
+						width=74
+						height=24
+					}
+					control {
+						chan="$(P)setTRAT"
+						clr=14
+						bclr=32
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=218
+						y=270
+						width=74
+						height=20
+					}
+					monitor {
+						chan="$(P)getTRAT"
+						clr=14
+						bclr=58
+					}
+					limits {
+					}
+				}
+				"message button" {
+					object {
+						x=294
+						y=273
+						width=15
+						height=15
+					}
+					control {
+						chan="$(P)setSPTR"
+						clr=14
+						bclr=32
+					}
+					label="up"
+					press_msg="1"
+				}
+				"text entry" {
+					object {
+						x=309
+						y=267
+						width=56
+						height=24
+					}
+					control {
+						chan="$(P)setSSTR"
+						clr=14
+						bclr=32
+					}
+					limits {
+					}
+				}
+				"text update" {
+					object {
+						x=368
+						y=269
+						width=68
+						height=20
+					}
+					monitor {
+						chan="$(P)getSSTR"
+						clr=14
+						bclr=58
+					}
+					limits {
+					}
+				}
+				"message button" {
+					object {
+						x=437
+						y=273
+						width=25
+						height=15
+					}
+					control {
+						chan="$(P)setSPTR"
+						clr=14
+						bclr=32
+					}
+					label="down"
+					press_msg="0"
+				}
+			}
+		}
+		text {
+			object {
+				x=5
+				y=271
+				width=110
+				height=15
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="Trigger Rate"
+		}
+		text {
+			object {
+				x=114
+				y=277
+				width=19
+				height=12
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="(Hz)"
+		}
+	}
+}
+composite {
+	object {
+		x=468
+		y=268
+		width=208
+		height=24
+	}
+	"composite name"=""
+	children {
+		text {
+			object {
+				x=468
+				y=274
+				width=108
+				height=15
+			}
+			"basic attribute" {
+				clr=20
+			}
+			textix="Burst & other"
+		}
+		"related display" {
+			object {
+				x=588
+				y=268
+				width=88
+				height=24
+			}
+			display[0] {
+				label="Other"
+				name="SRSDG645-1.adl"
+				args="P=SLAC:DG645:"
+			}
+			clr=14
+			bclr=51
+		}
+	}
+}
+"message button" {
+	object {
+		x=694
+		y=267
+		width=120
+		height=20
+	}
+	control {
+		chan="$(P)setCLS"
+		clr=14
+		bclr=15
+	}
+	label="Clear status"
+	press_msg="1"
+}
