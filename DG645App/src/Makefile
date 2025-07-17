@@ -55,7 +55,6 @@ DG645_DBD += drvAsynSerialPort.dbd
 DG645_DBD += calc.dbd
 DG645_DBD += stream-scalcout.dbd
 DG645_DBD += stream.dbd
-DG645_DBD += as.dbd
 DG645_DBD += asSupport.dbd
 # DG645_registerRecordDeviceDriver.cpp derives from DG645.dbd
 DG645_SRCS += DG645_registerRecordDeviceDriver.cpp
